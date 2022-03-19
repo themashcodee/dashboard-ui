@@ -1,5 +1,5 @@
 /* HEADING FONT */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
 /* BODY FONT */
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
@@ -8,9 +8,9 @@
 @tailwind components;
 @tailwind utilities;
 
-h1,h2,h3,h3,h4,h5,h6 {
-    @apply font-heading
+h1,h2,h3,h3,h4,h5,h6,button {
+    @apply font-primary
 }
-p,span,a,div,section,main,article,aside,footer,header,nav,li,ul{
-    @apply font-body
+*,*::before,*::after {
+    @apply font-secondary
 }
