@@ -1,4 +1,5 @@
 import React from "react"
+import { signIn } from "next-auth/react"
 import Link from "next/link"
 import toast from "react-hot-toast"
 import { GoogleIcon, AppleIcon } from "components/icons"
@@ -16,6 +17,12 @@ export const FormWrapper: Component<P> = ({ type, form: Form }) => {
 		)
 	}
 
+	function handleSignin() {
+		signIn("google", {
+			callbackUrl: process.env.NEXTAUTH_URL,
+		})
+	}
+
 	return (
 		<section className="flex flex-col justify-center items-center w-[60%] p-12 overflow-auto">
 			<div className="flex flex-col gap-4">
@@ -31,7 +38,10 @@ export const FormWrapper: Component<P> = ({ type, form: Form }) => {
 				</div>
 
 				<div className="flex gap-5 justify-between">
-					<button className="bg-white px-5 py-2 rounded-2xl flex gap-2 items-center font-light">
+					<button
+						className="bg-white px-5 py-2 rounded-2xl flex gap-2 items-center font-light"
+						onClick={handleSignin}
+					>
 						<GoogleIcon />
 						<span>{`${
 							type === "signin" ? "Sign in" : "Sign up"
