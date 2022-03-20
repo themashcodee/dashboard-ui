@@ -24,10 +24,10 @@ export const FormWrapper: Component<P> = ({ type, form: Form }) => {
 	}
 
 	return (
-		<section className="flex flex-col justify-center items-center w-[60%] p-12 overflow-auto">
-			<div className="flex flex-col gap-4">
+		<section className="flex justify-center items-center w-full lg:w-[60%] px-6 sm:px-8 lg:px-12 py-12">
+			<div className="flex flex-col gap-4 max-w-md flex-shrink-0">
 				<div className="flex flex-col gap-1">
-					<h1 className="text-4xl font-bold">
+					<h1 className="text-3xl lg:text-4xl font-bold">
 						{type === "signin" ? "Sign In" : "Create an account"}
 					</h1>
 					<p className="text-lg">
@@ -39,20 +39,20 @@ export const FormWrapper: Component<P> = ({ type, form: Form }) => {
 
 				<div className="flex gap-5 justify-between">
 					<button
-						className="bg-white px-5 py-2 rounded-2xl flex gap-2 items-center font-light"
+						className="bg-white px-4 py-2 grow justify-center rounded-xl lg:rounded-2xl flex gap-2 items-center font-light"
 						onClick={handleSignin}
 					>
 						<GoogleIcon />
-						<span>{`${
+						<span className="hidden sm:block">{`${
 							type === "signin" ? "Sign in" : "Sign up"
 						} with Google`}</span>
 					</button>
 					<button
-						className="bg-white px-5 py-2 rounded-2xl flex gap-2 items-center font-light"
+						className="bg-white px-4 py-2 grow justify-center rounded-xl lg:rounded-2xl flex gap-2 items-center font-light"
 						onClick={handleAppleBtnClick}
 					>
 						<AppleIcon />
-						<span>{`${
+						<span className="hidden sm:block">{`${
 							type === "signin" ? "Sign in" : "Sign up"
 						} with Apple`}</span>
 					</button>

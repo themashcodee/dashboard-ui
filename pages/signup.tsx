@@ -12,7 +12,7 @@ const Signup: NextPage = () => {
 		<>
 			<Head title="Sign Up" />
 
-			<main className="h-screen w-full flex bg-background">
+			<main className="lg:h-screen min-h-screen h-auto w-full flex flex-col lg:flex-row bg-background">
 				<OnboardingBanner />
 				<FormWrapper type="signup" form={SignupForm} />
 			</main>
