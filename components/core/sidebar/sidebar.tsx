@@ -29,25 +29,25 @@ export const Sidebar: Component<P> = ({ openedTab }) => {
 				<SidebarOption
 					icon={TransactionsIcon}
 					label="Transactions"
-					link="transactions"
+					link="/transactions"
 					selected={openedTab === "transactions"}
 				/>
 				<SidebarOption
 					icon={SchedulesIcon}
 					label="Schedules"
-					link="schedules"
+					link="/schedules"
 					selected={openedTab === "schedules"}
 				/>
 				<SidebarOption
 					icon={UsersIcon}
 					label="Users"
-					link="users"
+					link="/users"
 					selected={openedTab === "users"}
 				/>
 				<SidebarOption
 					icon={SettingsIcon}
 					label="Settings"
-					link="settings"
+					link="/settings"
 					selected={openedTab === "settings"}
 				/>
 			</ul>
