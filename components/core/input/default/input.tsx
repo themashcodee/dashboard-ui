@@ -22,7 +22,7 @@ export const Input: NamedExoticComponent<P> = memo(
 		return (
 			<div className="flex flex-col gap-2">
 				{label && (
-					<label htmlFor={label} className="text-lg cursor-pointer">
+					<label htmlFor={label} className="cursor-pointer">
 						{label}
 					</label>
 				)}

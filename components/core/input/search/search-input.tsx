@@ -27,7 +27,7 @@ export const SearchInput: NamedExoticComponent<P> = memo(
 					required
 					{...props}
 				/>
-				<span className="absolute right-4 top-1/2 transform -translate-y-1/2 text-icon">
+				<span className="absolute right-4 top-1/2 transform -translate-y-1/2 text-icon pointer-events-none">
 					<SearchIcon className="w-[16px] h-[16px]" />
 				</span>
 			</span>
