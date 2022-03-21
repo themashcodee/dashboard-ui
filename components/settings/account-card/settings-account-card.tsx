@@ -8,9 +8,7 @@ export const AccountCard = () => {
 
 	function handleUpdateAccount(e: FormEvent) {
 		e.preventDefault()
-		toast.error(
-			"We only support Google Sign In option as of now as per the Assignment Instructions!"
-		)
+		toast.error("This feature is not yet implemented.")
 	}
 
 	return (
