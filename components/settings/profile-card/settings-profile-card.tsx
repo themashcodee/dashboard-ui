@@ -15,7 +15,7 @@ export const ProfileCard = () => {
 	}
 
 	return (
-		<div className="flex flex-col w-[60%] max-w-[600px] bg-white gap-8 px-10 py-8 rounded-xl">
+		<div className="flex flex-col w-[60%] max-w-[600px] bg-white gap-8 px-10 py-8 rounded-xl h-max">
 			<h3 className="font-semibold text-lg">Profile</h3>
 
 			<div className="flex gap-12">
