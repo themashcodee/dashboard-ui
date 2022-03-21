@@ -2,15 +2,15 @@ import React from "react"
 import { Head, Wrapper } from "components/core"
 import type { NextPage } from "next"
 
-const Home: NextPage = () => {
+const Settings: NextPage = () => {
 	return (
 		<>
-			<Head />
-			<Wrapper tab="dashboard">
-				<h1>Dashboard content</h1>
+			<Head title="Settings" />
+			<Wrapper tab="settings">
+				<h1>Settings content</h1>
 			</Wrapper>
 		</>
 	)
 }
 
-export default Home
+export default Settings
