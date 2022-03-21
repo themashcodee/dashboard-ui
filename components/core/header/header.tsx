@@ -24,11 +24,11 @@ export const Header: Component<P> = ({ tabName, className, ...props }) => {
 				<SearchInput />
 				<NotificationIcon />
 
-				<div className="rounded-full h-10 w-10 overflow-hidden bg-red-200">
+				<div className="rounded-full h-8 w-8 overflow-hidden bg-red-200">
 					<Image
 						src={session.data?.user?.image ?? UserImage}
-						width={40}
-						height={40}
+						width={32}
+						height={32}
 						alt="profile picture"
 						objectFit="cover"
 					/>
