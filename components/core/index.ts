@@ -1,3 +1,6 @@
 export * from "./head"
 export * from "./input"
 export * from "./button"
+export * from "./wrapper"
+export * from "./sidebar"
+export * from "./header"
