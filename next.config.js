@@ -6,6 +6,9 @@ const nextConfig = {
     GOOGLE_CLIENT_SECRET: process.env.GOOGLE_CLIENT_SECRET,
     SECRET: process.env.SECRET,
     NEXTAUTH_URL: process.env.NEXTAUTH_URL
+  },
+  images: {
+    domains: ['lh3.googleusercontent.com']
   }
 }
 
