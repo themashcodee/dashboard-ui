@@ -20,7 +20,7 @@ export const Wrapper: Component<P> = ({
 		>
 			<Sidebar openedTab={tab} />
 
-			<div className="flex flex-col gap-4 grow">
+			<div className="flex flex-col gap-4 grow overflow-x-hidden">
 				<Header tabName={Capitalize(tab)} />
 				<div className="h-full w-full overflow-auto">{children}</div>
 			</div>
