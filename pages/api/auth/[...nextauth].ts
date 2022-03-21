@@ -13,7 +13,7 @@ export default NextAuth({
 	secret: SECRET,
 	pages: {
 		signIn: "/signin",
-		signOut: "/",
+		signOut: "/settings",
 		newUser: "/signup",
 	},
 })
