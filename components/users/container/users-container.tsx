@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { UsersHeader, UsersList } from "components/users"
+import { UsersHeader, UsersList, Pagination } from "components/users"
 import { useUsers, useDebounce } from "hooks"
 
 export const UsersContainer = () => {
@@ -24,6 +24,8 @@ export const UsersContainer = () => {
 					<UsersList users={users} />
 				)}
 			</div>
+
+			<Pagination />
 		</section>
 	)
 }
