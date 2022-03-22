@@ -26,7 +26,7 @@ export const TopProducts = () => {
 			<div className="flex justify-between  items-center">
 				<h3 className="font-semibold text-lg">Top Products</h3>
 
-				<p className="flex items-center gap-2 text-secondary-text">
+				<p className="flex items-center gap-2 text-secondary-text font-primary font-light">
 					May-June 2021 <DownArrowIcon className="w-[14px]" />
 				</p>
 			</div>

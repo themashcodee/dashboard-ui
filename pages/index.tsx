@@ -5,6 +5,7 @@ import {
 	DashboardActivities,
 	DashboardStats,
 	TopProducts,
+	TodaySchedule,
 } from "components/dashboard"
 
 const Home: NextPage = () => {
@@ -17,7 +18,7 @@ const Home: NextPage = () => {
 					<DashboardActivities />
 					<div className="flex gap-12">
 						<TopProducts />
-						<TopProducts />
+						<TodaySchedule />
 					</div>
 				</div>
 			</Wrapper>
