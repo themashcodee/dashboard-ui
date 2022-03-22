@@ -43,7 +43,7 @@ export const TopProducts = () => {
 							cy="50%"
 							startAngle={80}
 							endAngle={440}
-							outerRadius={80}
+							// outerRadius={80}
 						>
 							{pieChartData.map((entry) => (
 								<Cell key={entry.name} fill={entry.color} />
