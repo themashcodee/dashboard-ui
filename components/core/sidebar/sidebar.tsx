@@ -16,7 +16,7 @@ type P = {
 
 export const Sidebar: Component<P> = ({ openedTab }) => {
 	return (
-		<aside className="bg-primary rounded-3xl text-white gap-12 p-12 flex flex-col w-64 select-none">
+		<aside className="bg-primary rounded-3xl text-white gap-12 p-12 flex flex-col w-64 select-none flex-shrink-0">
 			<h2 className="text-3xl font-semibold">Dash.</h2>
 
 			<ul className="flex flex-col gap-8 grow">
