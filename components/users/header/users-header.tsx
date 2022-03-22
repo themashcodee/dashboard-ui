@@ -5,10 +5,15 @@ import { Component } from "types/common"
 
 type P = {
 	searchQuery: string
+	handleSearch: (query: string) => void
 	setSearchQuery: Dispatch<SetStateAction<string>>
 }
 
-export const UsersHeader: Component<P> = ({ searchQuery, setSearchQuery }) => {
+export const UsersHeader: Component<P> = ({
+	searchQuery,
+	setSearchQuery,
+	handleSearch,
+}) => {
 	return (
 		<div className="flex justify-between items-center">
 			<h2 className="font-semibold text-xl">User Records</h2>
@@ -18,7 +23,10 @@ export const UsersHeader: Component<P> = ({ searchQuery, setSearchQuery }) => {
 					placeholder="Search in table..."
 					className="bg-background"
 					value={searchQuery}
-					onChange={({ target }) => setSearchQuery(target.value)}
+					onChange={({ target }) => {
+						setSearchQuery(target.value)
+						handleSearch(target.value)
+					}}
 				/>
 				<button className="font-semibold flex gap-1 border items-center py-1 px-3 border-light-grey rounded-xl">
 					<FilterIcon className="w-[16px] text-light-grey" />
