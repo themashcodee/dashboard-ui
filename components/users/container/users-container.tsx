@@ -20,8 +20,10 @@ export const UsersContainer = () => {
 					"loading..."
 				) : error ? (
 					"Something went wrong :("
-				) : (
+				) : users.length ? (
 					<UsersList users={users} />
+				) : (
+					"No user found"
 				)}
 			</div>
 
