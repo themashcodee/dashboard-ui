@@ -52,6 +52,7 @@ Typescript - A strongly typed language that build on Javascript
 - Register and Login page responsiveness for all the devices
 - Used useMemo and memo to memoize component and functions result to reduce unnecessary re renders and computation usage.
 - Created Custom reusable Input, Button components.
+- Write conventiona commits
 
 ## How to run locally or contribute
 
