@@ -1,7 +1,11 @@
 import React from "react"
 import { Head, Wrapper } from "components/core"
 import type { NextPage } from "next"
-import { DashboardActivities, DashboardStats } from "components/dashboard"
+import {
+	DashboardActivities,
+	DashboardStats,
+	TopProducts,
+} from "components/dashboard"
 
 const Home: NextPage = () => {
 	return (
@@ -11,6 +15,10 @@ const Home: NextPage = () => {
 				<div className="flex flex-col gap-10">
 					<DashboardStats />
 					<DashboardActivities />
+					<div className="flex gap-12">
+						<TopProducts />
+						<TopProducts />
+					</div>
 				</div>
 			</Wrapper>
 		</>
